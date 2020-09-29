@@ -22,6 +22,12 @@
           "icon": "sap-icon://add"
         }
       }
+    },
+    "dataSources": {
+      "V2NorthwindNorthwind.svc": {
+        "uri": "/V2/Northwind/Northwind.svc/",
+        "type": "OData"
+      }
     }
   },
   "sap.ui": {
@@ -65,6 +71,16 @@
         "settings": {
           "bundleName": "sap.dev.tutorial.products.i18n.i18n"
         }
+      },
+      "": {
+        "type": "sap.ui.model.odata.v2.ODataModel",
+        "settings": {
+          "defaultOperationMode": "Server",
+          "defaultBindingMode": "TwoWay",
+          "defaultCountMode": "Inline",
+          "preload": true
+        },
+        "dataSource": "V2NorthwindNorthwind.svc"
       }
     },
     "resources": {
@@ -90,6 +106,13 @@
           "target": [
             "TargetMainView"
           ]
+        },
+        {
+          "name": "Products",
+          "pattern": "",
+          "target": [
+            "TargetProducts"
+          ]
         }
       ],
       "targets": {
@@ -98,6 +121,11 @@
           "viewLevel": 1,
           "viewId": "idAppControl",
           "viewName": "MainView"
+        },
+        "TargetProducts": {
+          "viewType": "XML",
+          "viewId": "Products",
+          "viewName": "Products"
         }
       }
     }
