@@ -5,7 +5,7 @@
     <Page id="Products" title="{i18n>title}">
       <content>
         <List items="{/Products}">
-          <StandardListItem type="Active" title="{ProductName}"/>
+          <StandardListItem type="Navigation" title="{ProductName}" press="handleItemListPress"/>
         </List>
       </content>
     </Page>

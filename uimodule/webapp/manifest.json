@@ -113,6 +113,13 @@
           "target": [
             "TargetProducts"
           ]
+        },
+        {
+          "name": "ProductDetail",
+          "pattern": "Product/{productID}",
+          "target": [
+            "TargetProductDetail"
+          ]
         }
       ],
       "targets": {
@@ -126,6 +133,12 @@
           "viewType": "XML",
           "viewId": "Products",
           "viewName": "Products"
+        },
+        "TargetProductDetail": {
+          "viewType": "XML", 
+          "viewLevel": 2,
+          "viewId": "ProductDetail",
+          "viewName": "ProductDetail"   
         }
       }
     }

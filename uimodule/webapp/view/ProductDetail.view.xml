@@ -1,0 +1,15 @@
+ <mvc:View controllerName="sap.dev.tutorial.products.controller.ProductDetail"
+  displayBlock="true"
+  xmlns="sap.m"
+  xmlns:mvc="sap.ui.core.mvc">
+      <Page id="ProductDetail" title="{i18n>productTitle}">
+        <content>
+          <VBox>
+            <Text text="{ProductName}"/>
+            <Text text="{UnitPrice}"/>
+            <Text text="{QuantityPerUnit}"/>
+            <Text text="{UnitsInStock}"/>
+          </VBox>
+        </content>
+      </Page>
+</mvc:View>
